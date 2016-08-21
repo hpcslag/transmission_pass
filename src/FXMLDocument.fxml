@@ -28,8 +28,8 @@
     <Button layoutX="14.0" layoutY="193.0" mnemonicParsing="false" text="Add Node Server" />
     <Label font="$x1" layoutX="14.0" layoutY="138.0" text="4. Add Node Server IP" />
     <PasswordField layoutX="87.0" layoutY="164.0" prefWidth="92.0" />
+    <TextArea fx:id="servLog" layoutX="8.0" layoutY="262.0" prefHeight="80.0" prefWidth="419.0" wrapText="false" />
     <Label font="$x1" layoutX="14.0" layoutY="164.0" text="Access Key:" />
-    <TextArea layoutX="8.0" layoutY="262.0" prefHeight="80.0" prefWidth="419.0" wrapText="true" />
     <Label font="$x1" layoutX="220.0" layoutY="138.0" text="5. Start server" />
     <Label font="$x1" layoutX="14.0" layoutY="232.0" text="6. Server log" />
   </children>

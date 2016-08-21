@@ -9,26 +9,43 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.text.Font;
 
 /**
+ * FXML Controller class
  *
  * @author hpcslag
  */
 public class FXMLDocumentController implements Initializable {
-    
+
+    @FXML
+    private Button button;
     @FXML
     private Label label;
-    
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
-    
+    private Font x1;
+    @FXML
+    private TextArea servLog;
+
+    /**
+     * Initializes the controller class.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        servLog.setText("\n Hello world \n");
     }    
+
+    @FXML
+    private void handleButtonAction(ActionEvent event) {
+    }
+    
+    public void addTextArea(String text){
+        label.setText("GG");
+        servLog.setText("OKOKOKOKOKOKOKOK \n OKOKOKOKOKOK \n OKOKOKOKOK");
+    }
     
 }
