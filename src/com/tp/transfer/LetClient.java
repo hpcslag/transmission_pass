@@ -26,10 +26,17 @@ public class LetClient {
                         t1.start();
                         
                         while (true) {
-                            System.out.print("Enter Message: ");
-                            String command = scanner.nextLine();
-                            w.println(command);
-                            System.out.println("--------------------");
+                            if(s.isConnected()){
+                                System.out.print("Enter Message: ");
+                                String command = scanner.nextLine();
+                                w.println(command);
+                                System.out.println("--------------------");
+                            }else{
+                                System.out.println("Server abort your connect!");
+                                System.gc();
+                                System.exit(0);
+                                break;
+                            }
                         }
                     } catch (Exception e) {
                         System.out.println(e);
